@@ -1,0 +1,171 @@
+/* src/app/components/dashboard/dashboard.component.css */
+
+/* Container Styles */
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Loading and Error Styles */
+  .loading, .error {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Departments Section */
+  .departments {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual Department Card */
+  .department {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .department h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Beds Section */
+  .beds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .bed {
+    position: relative;
+  }
+  
+  .bed-icon {
+    font-size: 24px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+  }
+  
+  .bed-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Bed Status Colors */
+  .bed-icon.available {
+    color: white;
+    background-color: green;
+  }
+  
+  .bed-icon.occupied {
+    color: white;
+    background-color: red;
+  }
+  
+  .bed-icon.discharge {
+    color: black;
+    background-color: yellow;
+  }
+  
+  /* Status Summary */
+.status-summary {
+    display: flex; /* Keep this to align items in a row */
+    justify-content: space-between; /* Space them evenly */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    font-size: 0.9em; /* Set a smaller font size */
+    color: #333; /* Set the text color */
+    margin-top: 10px; /* Add margin for spacing */
+    border-top: 1px solid #ddd; /* Add a border for separation */
+    padding-top: 10px; /* Add padding */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.status-summary span {
+    margin-bottom: 5px; /* Add some bottom margin for spacing */
+}
+
+.status-summary strong {
+    color: #007BFF; /* Optional: Change the color for emphasis */
+    font-weight: bold; /* Make it bold */
+}
+
+/* Improved Bed Icon Hover Effect */
+.bed-icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+  
+  /* Legend Styles */
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .legend-color.available {
+    background-color: green;
+  }
+  
+  .legend-color.occupied {
+    background-color: red;
+  }
+  
+  .legend-color.discharge {
+    background-color: yellow;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .departments {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .department {
+      width: 90%;
+    }
+  
+    .status-summary span {
+      width: 100%;
+    }
+  }
+  

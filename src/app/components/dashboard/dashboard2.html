@@ -1,6 +1,6 @@
 <!-- src/app/components/dashboard/dashboard.component.html -->
 <div class="dashboard-container">
-    <h1>Hospital Bed State</h1>
+    <h1>Hospital Bed Dashboard</h1>
   
     <!-- Loading State -->
     <div *ngIf="isLoading" class="loading">Loading bed status...</div>
@@ -28,19 +28,15 @@
             ></i>
           </div>
         </div>
+        <!-- src/app/components/dashboard/dashboard.component.html -->
         <div class="status-summary">
-          <div class="status-item">
-            <span>Total Beds:</span> <strong>{{ dept.totalBeds }}</strong>
-          </div>
-          <div class="status-item">
-            <span>Occupied:</span> <strong>{{ dept.occupiedBeds }}</strong>
-          </div>
-          <div class="status-item">
-            <span>Discharge Requests:</span> <strong>{{ dept.dischargeRequests }}</strong>
-          </div>
-          <div class="status-item">
-            <span>Available:</span> <strong>{{ dept.availableBeds }}</strong>
-          </div>
+          <span>Total Beds: {{ dept.totalBeds }}</span>
+          <span>Occupied: {{ dept.occupiedBeds }}</span>
+          <span
+            >Discharge Requests:
+            <strong>{{ dept.dischargeRequests }}</strong></span
+          >
+          <span>Available: {{ dept.availableBeds }}</span>
         </div>
       </div>
     </div>

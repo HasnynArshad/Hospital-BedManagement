@@ -1,27 +1,23 @@
-
-
-
-
 /* src/app/components/dashboard/dashboard.component.css */
 
 /* Container Styles */
 .dashboard-container {
-    padding: 20px;
-    font-family: 'Roboto', sans-serif; /* Use a modern font */
-    background-color: #f4f7fa; /* Light background color for contrast */
-    border-radius: 8px; /* Rounded corners for container */
+    padding: 30px; /* Increased padding */
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECF0F1; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow */
 }
 
 /* Header Styles */
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #333; /* Dark text for better readability */
+    color: #2C3E50; /* Dark text */
 }
 
 /* Loading and Error Styles */
-.loading,
-.error {
+.loading, .error {
     text-align: center;
     font-size: 1.2em;
     margin-top: 20px;
@@ -29,7 +25,7 @@ h1 {
 }
 
 .error {
-    color: red;
+    color: #DC3545; /* Error color */
 }
 
 /* Departments Section */
@@ -45,27 +41,27 @@ h1 {
     background-color: #fff; /* White background for cards */
     border: 1px solid #ddd; /* Subtle border */
     border-radius: 8px;
-    padding: 15px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
-    transition: transform 0.2s; /* Smooth hover effect */
+    padding: 20px; /* More padding */
+    width: 320px; /* Adjusted width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
 }
 
 .department:hover {
-    transform: scale(1.02); /* Slight scale effect on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .department h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #007BFF; /* Blue color for titles */
+    color: #3498DB; /* Light Blue */
 }
 
 /* Beds Section */
 .beds {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
     margin-bottom: 15px;
 }
@@ -76,50 +72,50 @@ h1 {
 }
 
 .bed-icon {
-    font-size: 24px;
+    font-size: 28px; /* Larger for visibility */
     cursor: pointer;
-    width: 40px; /* Slightly larger for better visibility */
-    height: 40px;
+    width: 45px; /* Slightly larger */
+    height: 45px;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
     border-radius: 50%;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s; /* Combined transitions */
 }
 
 .bed-icon:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow on hover */
 }
 
 /* Bed Status Colors */
 .bed-icon.available {
     color: white;
-    background-color: #28a745; /* Bootstrap green */
+    background-color: #28A745; /* Green */
 }
 
 .bed-icon.occupied {
     color: white;
-    background-color: #dc3545; /* Bootstrap red */
+    background-color: #DC3545; /* Red */
 }
 
 .bed-icon.discharge {
     color: black;
-    background-color: #ffc107; /* Bootstrap yellow */
+    background-color: #FFC107; /* Yellow */
 }
 
 /* Status Summary */
 .status-summary {
-    margin-top: 10px; /* Keep this for spacing */
-    padding: 10px 0; /* Padding for better appearance */
-    border-top: 1px solid #ddd; /* Top border for separation */
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
 }
 
 .status-item {
     display: flex;
     justify-content: space-between;
-    color: #333; /* Dark color for contrast */
-    font-size: 0.9em; /* Smaller font size */
-    padding: 5px 0; /* Padding for spacing */
+    color: #333;
+    font-size: 1em; /* Slightly larger font size */
+    padding: 5px 0;
 }
 
 /* Legend Styles */
@@ -127,13 +123,13 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    padding: 10px 0; /* Padding for better appearance */
+    padding: 10px 0;
 }
 
 .legend-item {
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .legend-color {
@@ -145,15 +141,15 @@ h1 {
 }
 
 .legend-color.available {
-    background-color: #28a745; /* Bootstrap green */
+    background-color: #28A745; /* Green */
 }
 
 .legend-color.occupied {
-    background-color: #dc3545; /* Bootstrap red */
+    background-color: #DC3545; /* Red */
 }
 
 .legend-color.discharge {
-    background-color: #ffc107; /* Bootstrap yellow */
+    background-color: #FFC107; /* Yellow */
 }
 
 /* Responsive Design */
