@@ -4,17 +4,17 @@
       "id": 1,
       "name": "OT",
       "totalBeds": 5,
-      "occupiedBeds": 3,
+      "occupiedBeds": 2,
       "dischargeRequests": 1,
-      "availableBeds": 2
+      "availableBeds": 3
     },
     {
       "id": 2,
       "name": "Cardiac Ward",
       "totalBeds": 20,
-      "occupiedBeds": 15,
+      "occupiedBeds": 13,
       "dischargeRequests": 2,
-      "availableBeds": 5
+      "availableBeds": 7
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "totalBeds": 16,
       "occupiedBeds": 10,
       "dischargeRequests": 1,
-      "availableBeds": 5
+      "availableBeds": 6
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "totalBeds": 16,
       "occupiedBeds": 10,
       "dischargeRequests": 1,
-      "availableBeds": 5
+      "availableBeds": 6
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "totalBeds": 16,
       "occupiedBeds": 10,
       "dischargeRequests": 1,
-      "availableBeds": 5
+      "availableBeds": 6
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "totalBeds": 16,
       "occupiedBeds": 10,
       "dischargeRequests": 1,
-      "availableBeds": 5
+      "availableBeds": 6
     },
     {
       "id": 7,
@@ -54,31 +54,31 @@
       "totalBeds": 20,
       "occupiedBeds": 10,
       "dischargeRequests": 3,
-      "availableBeds": 7
+      "availableBeds": 10
     },
     {
       "id": 8,
       "name": "Medical ICU-2",
       "totalBeds": 16,
-      "occupiedBeds": 12,
+      "occupiedBeds": 11,
       "dischargeRequests": 1,
-      "availableBeds": 4
+      "availableBeds": 5
     },
     {
       "id": 9,
       "name": "NICU",
       "totalBeds": 8,
-      "occupiedBeds": 5,
+      "occupiedBeds": 4,
       "dischargeRequests": 1,
-      "availableBeds": 3
+      "availableBeds": 4
     },
     {
       "id": 10,
       "name": "PICU",
       "totalBeds": 9,
-      "occupiedBeds": 5,
+      "occupiedBeds": 4,
       "dischargeRequests": 1,
-      "availableBeds": 4
+      "availableBeds": 5
     }
   ]
 }

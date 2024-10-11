@@ -16,6 +16,13 @@ export class DashboardComponent implements OnInit {
   isLoading: boolean = true;
   error: string = '';
 
+
+  // Overall Summary Properties
+  totalBeds: number = 0;
+  totalOccupiedBeds: number = 0;
+  totalDischargeRequests: number = 0;
+  totalAvailableBeds: number = 0;
+
   constructor(private bedService: BedService) { }
   ngOnInit(): void {
     this.fetchBedStatus();
@@ -26,6 +33,7 @@ export class DashboardComponent implements OnInit {
       next: (departments: Department[]) => {
         this.departments = departments;
         this.isLoading = false;
+        this.calculateOverallSummary();
       },
       error: (error: any) => {
         console.log(error.message);
@@ -33,6 +41,13 @@ export class DashboardComponent implements OnInit {
         this.isLoading = false;
       }
     })
+  }
+
+  calculateOverallSummary(): void {
+    this.totalBeds = this.departments.reduce((sum, dept) => sum + dept.totalBeds, 0);
+    this.totalOccupiedBeds = this.departments.reduce((sum, dept) => sum + dept.occupiedBeds, 0);
+    this.totalDischargeRequests = this.departments.reduce((sum, dept) => sum + dept.dischargeRequests, 0);
+    this.totalAvailableBeds = this.departments.reduce((sum, dept) => sum + dept.availableBeds, 0);
   }
 
   getBedStatuses(department: Department): string[] {

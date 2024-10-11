@@ -1,122 +1,779 @@
-[
+{
+  "departments": [
     {
+      "id": 1,
       "name": "OT",
-      "totalBeds": 5,
-      "occupiedBeds": 3,
-      "dischargeRequests": 1,
-      "availableBeds": 2
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "available"
+        },
+        {
+          "bedNumber": 2,
+          "status": "occupied",
+          "patientName": "John Doe",
+          "doctorName": "Dr. Smith",
+          "admissionDate": "2023-10-01"
+        },
+        {
+          "bedNumber": 3,
+          "status": "occupied",
+          "patientName": "Jane Smith",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2023-10-05"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        }
+      ]
     },
     {
+      "id": 2,
       "name": "Cardiac Ward",
-      "totalBeds": 20,
-      "occupiedBeds": 15,
-      "dischargeRequests": 3,
-      "availableBeds": 2
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Alice Johnson",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-20"
+        },
+        {
+          "bedNumber": 2,
+          "status": "occupied",
+          "patientName": "Bob White",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-09-25"
+        },
+        {
+          "bedNumber": 3,
+          "status": "occupied",
+          "patientName": "Charlie Green",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-09-28"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "occupied",
+          "patientName": "Daniel Clark",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 7,
+          "status": "occupied",
+          "patientName": "Ella Turner",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-01"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        },
+        {
+          "bedNumber": 9,
+          "status": "occupied",
+          "patientName": "Frank Lewis",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-09-28"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "available"
+        },
+        {
+          "bedNumber": 12,
+          "status": "occupied",
+          "patientName": "Grace Hall",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 13,
+          "status": "available"
+        },
+        {
+          "bedNumber": 14,
+          "status": "occupied",
+          "patientName": "Henry Scott",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-09-27"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        },
+        {
+          "bedNumber": 17,
+          "status": "occupied",
+          "patientName": "Ivy Adams",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-02"
+        },
+        {
+          "bedNumber": 18,
+          "status": "available"
+        },
+        {
+          "bedNumber": 19,
+          "status": "occupied",
+          "patientName": "Jack Roberts",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-29"
+        },
+        {
+          "bedNumber": 20,
+          "status": "available"
+        }
+      ]
     },
     {
+      "id": 3,
       "name": "Neuro Ward",
-      "totalBeds": 16,
-      "occupiedBeds": 10,
-      "dischargeRequests": 2,
-      "availableBeds": 4
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "discharge",
+          "patientName": "Mark Lee",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-25"
+        },
+        {
+          "bedNumber": 2,
+          "status": "occupied",
+          "patientName": "Nancy King",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-09-27"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "occupied",
+          "patientName": "Oliver Harris",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-10-02"
+        },
+        {
+          "bedNumber": 7,
+          "status": "occupied",
+          "patientName": "Peter Young",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-04"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        },
+        {
+          "bedNumber": 9,
+          "status": "occupied",
+          "patientName": "Quinn Perez",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "occupied",
+          "patientName": "Rachel Cox",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-09-28"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "available"
+        },
+        {
+          "bedNumber": 14,
+          "status": "occupied",
+          "patientName": "Samuel Price",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "ICU",
-      "totalBeds": 25,
-      "occupiedBeds": 20,
-      "dischargeRequests": 4,
-      "availableBeds": 1
+      "id": 4,
+      "name": "IPD Ward",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Tom Evans",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-10-02"
+        },
+        {
+          "bedNumber": 2,
+          "status": "occupied",
+          "patientName": "Uma Kelly",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-28"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "occupied",
+          "patientName": "Vera Baker",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 6,
+          "status": "available"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        },
+        {
+          "bedNumber": 9,
+          "status": "occupied",
+          "patientName": "Walter Foster",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-27"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "available"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "occupied",
+          "patientName": "Xander Reed",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-09-26"
+        },
+        {
+          "bedNumber": 14,
+          "status": "available"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Pediatrics",
-      "totalBeds": 15,
-      "occupiedBeds": 10,
-      "dischargeRequests": 2,
-      "availableBeds": 3
-    },
-    {
-      "name": "Maternity",
-      "totalBeds": 12,
-      "occupiedBeds": 8,
-      "dischargeRequests": 2,
-      "availableBeds": 2
-    },
-    {
-      "name": "Emergency",
-      "totalBeds": 30,
-      "occupiedBeds": 25,
-      "dischargeRequests": 5,
-      "availableBeds": 0
-    },
-    {
+      "id": 5,
       "name": "General Ward",
-      "totalBeds": 70,
-      "occupiedBeds": 60,
-      "dischargeRequests": 5,
-      "availableBeds": 5
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Yvonne Lee",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-10-01"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "occupied",
+          "patientName": "Zane Taylor",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 6,
+          "status": "available"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "occupied",
+          "patientName": "Adam Clark",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-29"
+        },
+        {
+          "bedNumber": 9,
+          "status": "available"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "available"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "available"
+        },
+        {
+          "bedNumber": 14,
+          "status": "available"
+        },
+        {
+          "bedNumber": 15,
+          "status": "occupied",
+          "patientName": "Brian Foster",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-27"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Oncology",
-      "totalBeds": 150,
-      "occupiedBeds": 140,
-      "dischargeRequests": 8,
-      "availableBeds": 2
+      "id": 6,
+      "name": "Dylasis Ward",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Catherine Adams",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-28"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "occupied",
+          "patientName": "David Baker",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "available"
+        },
+        {
+          "bedNumber": 7,
+          "status": "occupied",
+          "patientName": "Emily Parker",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        },
+        {
+          "bedNumber": 9,
+          "status": "available"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "occupied",
+          "patientName": "Frank Collins",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-10-02"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "available"
+        },
+        {
+          "bedNumber": 14,
+          "status": "occupied",
+          "patientName": "George Martinez",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-29"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Orthopedics",
-      "totalBeds": 25,
-      "occupiedBeds": 20,
-      "dischargeRequests": 3,
-      "availableBeds": 2
+      "id": 7,
+      "name": "Medical ICU-1",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Harry Johnson",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-27"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "occupied",
+          "patientName": "Irene Lewis",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-09-29"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "occupied",
+          "patientName": "Jack Thompson",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-01"
+        },
+        {
+          "bedNumber": 9,
+          "status": "available"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "available"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "occupied",
+          "patientName": "Kate Moore",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 14,
+          "status": "available"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        },
+        {
+          "bedNumber": 17,
+          "status": "occupied",
+          "patientName": "Leo Davis",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-02"
+        },
+        {
+          "bedNumber": 18,
+          "status": "available"
+        },
+        {
+          "bedNumber": 19,
+          "status": "occupied",
+          "patientName": "Mia Garcia",
+          "doctorName": "Dr. Thomas",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 20,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Gastroenterology",
-      "totalBeds": 30,
-      "occupiedBeds": 25,
-      "dischargeRequests": 2,
-      "availableBeds": 3
+      "id": 8,
+      "name": "Medical ICU-2",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Nina Martin",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "available"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "occupied",
+          "patientName": "Owen Scott",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "occupied",
+          "patientName": "Paul Wright",
+          "doctorName": "Dr. Wilson",
+          "admissionDate": "2024-10-04"
+        },
+        {
+          "bedNumber": 9,
+          "status": "available"
+        },
+        {
+          "bedNumber": 10,
+          "status": "available"
+        },
+        {
+          "bedNumber": 11,
+          "status": "available"
+        },
+        {
+          "bedNumber": 12,
+          "status": "available"
+        },
+        {
+          "bedNumber": 13,
+          "status": "occupied",
+          "patientName": "Quincy Baker",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-10-01"
+        },
+        {
+          "bedNumber": 14,
+          "status": "available"
+        },
+        {
+          "bedNumber": 15,
+          "status": "available"
+        },
+        {
+          "bedNumber": 16,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Dermatology",
-      "totalBeds": 25,
-      "occupiedBeds": 15,
-      "dischargeRequests": 5,
-      "availableBeds": 5
+      "id": 9,
+      "name": "NICU",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Baby A",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-10-03"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "occupied",
+          "patientName": "Baby B",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-10-01"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "available"
+        },
+        {
+          "bedNumber": 6,
+          "status": "occupied",
+          "patientName": "Baby C",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        }
+      ]
     },
     {
-      "name": "Neurology",
-      "totalBeds": 25,
-      "occupiedBeds": 20,
-      "dischargeRequests": 3,
-      "availableBeds": 2
-    },
-    {
-      "name": "Renal",
-      "totalBeds": 10,
-      "occupiedBeds": 7,
-      "dischargeRequests": 1,
-      "availableBeds": 2
-    },
-    {
-      "name": "Psychiatry",
-      "totalBeds": 20,
-      "occupiedBeds": 18,
-      "dischargeRequests": 2,
-      "availableBeds": 0
-    },
-    {
-      "name": "Trauma",
-      "totalBeds": 25,
-      "occupiedBeds": 22,
-      "dischargeRequests": 2,
-      "availableBeds": 1
-    },
-    {
-      "name": "Urology",
-      "totalBeds": 16,
-      "occupiedBeds": 10,
-      "dischargeRequests": 2,
-      "availableBeds": 4
+      "id": 10,
+      "name": "PICU",
+      "beds": [
+        {
+          "bedNumber": 1,
+          "status": "occupied",
+          "patientName": "Child A",
+          "doctorName": "Dr. Adams",
+          "admissionDate": "2024-10-04"
+        },
+        {
+          "bedNumber": 2,
+          "status": "available"
+        },
+        {
+          "bedNumber": 3,
+          "status": "occupied",
+          "patientName": "Child B",
+          "doctorName": "Dr. Green",
+          "admissionDate": "2024-09-30"
+        },
+        {
+          "bedNumber": 4,
+          "status": "available"
+        },
+        {
+          "bedNumber": 5,
+          "status": "occupied",
+          "patientName": "Child C",
+          "doctorName": "Dr. Brown",
+          "admissionDate": "2024-09-29"
+        },
+        {
+          "bedNumber": 6,
+          "status": "available"
+        },
+        {
+          "bedNumber": 7,
+          "status": "available"
+        },
+        {
+          "bedNumber": 8,
+          "status": "available"
+        },
+        {
+          "bedNumber": 9,
+          "status": "available"
+        }
+      ]
     }
   ]
-  
+}

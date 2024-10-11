@@ -1,6 +1,30 @@
 <!-- src/app/components/dashboard/dashboard.component.html -->
 <div class="dashboard-container">
-  <h1>Hospital Bed Management</h1>
+  <h1 [attr.aria-label]=" 'hasnain here' ">Hospital Bed Management</h1>
+
+
+  <!-- Overall Summary Section -->
+  <div class="overall-summary" *ngIf="!isLoading && !error">
+    <h2>Overall Summary</h2>
+    <div class="summary-cards">
+      <div class="summary-card">
+        <span class="summary-title">Total Beds</span>
+        <span class="summary-value">{{ totalBeds }}</span>
+      </div>
+      <div class="summary-card">
+        <span class="summary-title">Occupied Beds</span>
+        <span class="summary-value">{{ totalOccupiedBeds }}</span>
+      </div>
+      <div class="summary-card">
+        <span class="summary-title">Discharge Requests</span>
+        <span class="summary-value">{{ totalDischargeRequests }}</span>
+      </div>
+      <div class="summary-card">
+        <span class="summary-title">Available Beds</span>
+        <span class="summary-value">{{ totalAvailableBeds }}</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Loading State -->
   <div *ngIf="isLoading" class="loading">Loading bed management...</div>
